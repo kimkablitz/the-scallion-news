@@ -29,7 +29,6 @@ const keys = require('./keys');
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scallion";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
 
-
 require("./routes/api-routes")(app);
 app.get("/saved", function (req, res) {
   res.render("savedPage");
