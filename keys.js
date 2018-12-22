@@ -1,3 +1,3 @@
-exports.mongoURI = {
-    mongoURI: process.env.MONGO_URI
+exports.MONGODB_URI = {
+    MONGODB_URI: process.env.MONGO_URI
 }

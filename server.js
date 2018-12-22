@@ -26,8 +26,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 const keys = require('./keys');
 
-const mongoURI = process.env.mongoURI || "mongodb://localhost/scallion";
-mongoose.connect(mongoURI, { useNewUrlParser: true })
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scallion";
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
 
 
 require("./routes/api-routes")(app);
